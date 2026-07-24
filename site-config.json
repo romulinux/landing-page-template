@@ -1,0 +1,250 @@
+{
+  "empresa": {
+    "nome": "PetLovers",
+    "brandName": "Pet<span>Lovers</span>",
+    "brand": {
+      "first": "Pet",
+      "last": "Lovers"
+    },
+    "brandTagline": "Amor de verdade pelo seu melhor amigo, todos os dias.",
+    "email": "contato@petlovers.com",
+    "whatsapp": "553199999999",
+    "displayWhatsapp": "(31) 99999-9999",
+    "is24Horas": false,
+    "funcionamento": [
+      {
+        "periodo": "Seg a Sex",
+        "horario": "8h às 19h"
+      },
+      {
+        "periodo": "Sábado",
+        "horario": "8h às 16h"
+      }
+    ]
+  },
+  "site": {
+    "title": "PetLovers — Pet Shop que ama o seu melhor amigo",
+    "description": "PetLovers é o pet shop que cuida do seu cão e gato com carinho de verdade. Banho, tosa, produtos e muito amor. Descubra por que tantos tutores confiam na gente.",
+    "brandTagline": "Amor de verdade pelo seu melhor amigo, todos os dias.",
+    "og": {
+      "image": "./assets/og-image.png"
+    }
+  },
+  "hero": {
+    "eyebrow": "🐾 Pet Shop em Belo Horizonte",
+    "headline": "O carinho que o seu melhor amigo",
+    "hl": "merece de verdade",
+    "lead": "Você já imaginou um lugar onde cães e gatos saem mais felizes do que chegaram? Na PetLovers isso acontece todos os dias — e os tutores não conseguem parar de comentar. Quer descobrir o porquê?",
+    "primaryCta": {
+      "text": "Agende um banho & tosa",
+      "href": "#contato"
+    },
+    "secondaryCta": {
+      "text": "Ver o que dizem sobre nós",
+      "href": "#avaliacoes"
+    },
+    "stats": {
+      "rating": 4.9,
+      "customers": 12000,
+      "years": 8
+    },
+    "images": [
+      {
+        "src": "./assets/slides/hero_pet_feliz_1.jpeg",
+        "alt": "Pet feliz na PetLovers 1"
+      },
+      {
+        "src": "./assets/slides/hero_pet_feliz_2.jpeg",
+        "alt": "Pet feliz na PetLovers 2"
+      },
+      {
+        "src": "./assets/slides/hero_pet_feliz_3.jpeg",
+        "alt": "Pet feliz na PetLovers 3"
+      }
+    ]
+  },
+  "vitrine": {
+    "title": "Vitrine PetLovers",
+    "h2": "Os favoritos do seu amigo",
+    "p": "Produtos aprovados por quem mais entende de pet.",
+    "aff": "Ao comprar, você apoia nossa loja."
+  },
+  "products": [
+    {
+      "icon": "🍖",
+      "src": "./assets/produtos/produto_racao_para_cachorro.png",
+      "tag": "Mais vendido",
+      "name": "Ração Premium Cães",
+      "price": "R$ 189,90",
+      "stars": 5,
+      "url": "#"
+    },
+    {
+      "icon": "🐱",
+      "src": "./assets/produtos/produto_racao_para_gato.png",
+      "tag": "Favorito",
+      "name": "Ração Gatos Sabor Salmão",
+      "price": "R$ 149,90",
+      "stars": 5,
+      "url": "#"
+    },
+    {
+      "icon": "🧸",
+      "src": "./assets/produtos/produto_brinquedo_para_pet.png",
+      "tag": "Diversão",
+      "name": "Kit Brinquedos Pet",
+      "price": "R$ 79,90",
+      "stars": 4,
+      "url": "#"
+    },
+    {
+      "icon": "🛏️",
+      "src": "./assets/produtos/produto_caminha_para_pet.png",
+      "tag": "Conforto",
+      "name": "Caminha Fofinha",
+      "price": "R$ 129,90",
+      "stars": 5,
+      "url": "#"
+    }
+  ],
+  "services": {
+    "title": "Nossos Serviços",
+    "h2": "Cuidado completo para pura alegria",
+    "p": "Do banho relaxante à nutrição perfeita, cada detalhe é pensado para o bem-estar do seu melhor amigo.",
+    "list": [
+      {
+        "src": "./assets/servicos/servico_1_banho_e_tosa.png",
+        "alt": "Serviço de banho e tosa",
+        "h3": "Banho & Tosa",
+        "p": "Especialistas e produtos premium. Seu pet sai renovado, fofinho e muito cheiroso."
+      },
+      {
+        "src": "./assets/servicos/servico_2_spa.png",
+        "alt": "Espaço para tratamento completo do seu pet",
+        "h3": "Espaço para Pets",
+        "p": "Ambiente 'Pet Friendly' exclusivo, calmo e seguro para relaxar o seu melhor amigo."
+      },
+      {
+        "src": "./assets/servicos/servico_3_mercado_para_pets.png",
+        "alt": "Mercado para pets",
+        "h3": "Mercado para Pet",
+        "p": "Rações premium, brinquedos e acessórios selecionados com amor e rigor técnico."
+      },
+      {
+        "src": "./assets/servicos/servico_4_brinquedos_para_pet.png",
+        "alt": "Brinquedos para  Pet",
+        "h3": "Brinquedos para  Pet",
+        "p": "Diversão e conforto para o seu melhor amigo."
+      }
+    ]
+  },
+  "depoimentos": {
+    "title": "Depoimentos de clientes",
+    "h2": "A alegria deles é nossa missão",
+    "p": "Alguns dos nossos clientes mais fofos curtindo o dia na PetLovers.",
+    "list": [
+      {
+        "src": "./assets/depoimentos/depoimento_1_banho_cachorro.jpg",
+        "caption": "Dia de SPA 🛁",
+        "description": "Depoimento: Meu cachorro saiu do banho super feliz e cheiroso! Atendimento excelente."
+      },
+      {
+        "src": "./assets/depoimentos/depoimento_2_gato_comendo_racao.jpeg",
+        "caption": "Hora do lanche 🍔",
+        "description": "Depoiomento: Meu gato ama a ração que comprei na PetLovers. Ele come com muito entusiasmo!"
+      },
+      {
+        "src": "./assets/depoimentos/depoimento_3_cachorro_com_cone.jpeg",
+        "caption": "Dia de cuidar 🩺",
+        "description": "Depoimento: Meu cachorro foi bem cuidado durante a tosa. A equipe é muito atenciosa e profissional."
+      },
+      {
+        "src": "./assets/depoimentos/depoimento_4_bato_brincando.jpg",
+        "caption": "Brincadeira tem hora 🤗",
+        "description": "Depoimento: Meu gato adora brincar com os brinquedos da PetLovers. É o melhor lugar para ele!"
+      }
+    ]
+  },
+  "avaliacoes": {
+    "eyebrow": "Quem AMA, aprova",
+    "h2": "Amor em forma de depoimentos",
+    "p": "Veja o que os tutores dizem sobre a experiência PetLovers.",
+    "nota": 4.9,
+    "score": "4,9",
+    "total": "12000",
+    "text": "pets felizes",
+    "years": 8,
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "Meu cachorro AMA ir na PetLovers! Sai lindo e cheiroso todas as vezes. Atendimento nota mil.",
+        "name": "Ana C.",
+        "meta": "Tutora do Thor 🐕",
+        "img": "assets/avatars/avatar1.png",
+        "user": "https://randomuser.me/api/portraits/men/75.jpg"
+      },
+      {
+        "stars": 5,
+        "text": "Nunca vi meu gato tão calmo depois do banho. Equipe atenciosa e apaixonada por bichinhos!",
+        "name": "Rafael M.",
+        "meta": "Tutor da Mia 🐈",
+        "img": "assets/avatars/avatar2.png",
+        "user": "https://randomuser.me/api/portraits/women/68.jpg"
+      },
+      {
+        "stars": 5,
+        "text": "O leva e traz salvou minha rotina. Confio de olhos fechados na PetLovers.",
+        "name": "Juliana P.",
+        "meta": "Tutora do Bono 🐶",
+        "img": "assets/avatars/avatar3.png",
+        "user": "https://randomuser.me/api/portraits/women/68.jpg"
+      },
+      {
+        "stars": 5,
+        "text": "Produtos ótimos e preço justo. Recomendo demais para todo mundo do bairro!",
+        "name": "Marcos L.",
+        "meta": "Tutor da Lola 🐩",
+        "img": "assets/avatars/avatar1.png",
+        "user": "https://randomuser.me/api/portraits/women/68.jpg"
+      },
+      {
+        "stars": 4,
+        "text": "Ambiente limpo e cheiroso, meus dois gatos foram super bem cuidados.",
+        "name": "Beatriz S.",
+        "meta": "Tutora de 2 gatos 🐱",
+        "img": "assets/avatars/avatar2.png",
+        "user": "https://randomuser.me/api/portraits/women/68.jpg"
+      },
+      {
+        "stars": 5,
+        "text": "Meu filhote ficou fofo demais depois da tosa. Voltarei sempre!",
+        "name": "Diego R.",
+        "meta": "Tutor do Pipoca 🐾",
+        "img": "assets/avatars/avatar3.png",
+        "user": "https://randomuser.me/api/portraits/men/75.jpg"
+      }
+    ]
+  },
+  "location": {
+    "endereco": {
+      "logradouro": "Av. Afonso Pena",
+      "numero": "1500",
+      "bairro": "Centro",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "30130-921"
+    }
+  },
+  "googleMaps": {
+    "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+  },
+  "analytics": {
+    "googleAnalyticsId": "G-YT7Z02SDSC",
+    "adsenseClient": "ca-pub-XXXXXXXXXXXXXXXX",
+    "adsenseSlot": "1234567890"
+  },
+  "api": {
+    "lead": false
+  },
+  "debug": true
+}

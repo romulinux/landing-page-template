@@ -1,0 +1,597 @@
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetLovers — Pet Shop que ama o seu melhor amigo</title>
+  <meta name="description" content="PetLovers é o pet shop que cuida do seu cão e gato com carinho de verdade. Banho, tosa, produtos e muito amor. Descubra por que tantos tutores confiam na gente.">
+  <meta name="theme-color" content="#ff8a3d">
+
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/icons/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PetLovers — Pet Shop que ama o seu melhor amigo">
+  <meta property="og:description" content="PetLovers é o pet shop que cuida do seu cão e gato com carinho de verdade. Banho, tosa, produtos e muito amor. Descubra por que tantos tutores confiam na gente.">
+  <meta property="og:image"
+    content="./assets/icons/favicon.png">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Nunito:wght@400;600;700;800&amp;display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT7Z02SDSC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YT7Z02SDSC');
+  </script>
+</head>
+
+<body>
+  <!-- ===== Progress bar ===== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true" style="width: 11.5903%;"></div>
+
+  <!-- ===== Floating paw particles ===== -->
+  <div class="paw-field" id="pawField" aria-hidden="true"><span class="paw"
+      style="left: 20.0166vw; bottom: -50px; animation-duration: 10.4186s; font-size: 1.90103rem; opacity: 0.248563;">🐾</span><span
+      class="paw"
+      style="left: 84.8231vw; bottom: -50px; animation-duration: 19.2838s; font-size: 0.823474rem; opacity: 0.163076;">🐾</span><span
+      class="paw"
+      style="left: 46.8894vw; bottom: -50px; animation-duration: 10.5208s; font-size: 1.94142rem; opacity: 0.363214;">🐾</span><span
+      class="paw"
+      style="left: 14.9479vw; bottom: -50px; animation-duration: 16.0386s; font-size: 0.870515rem; opacity: 0.129876;">🐾</span><span
+      class="paw"
+      style="left: 29.9927vw; bottom: -50px; animation-duration: 19.7545s; font-size: 0.870204rem; opacity: 0.325699;">🐾</span><span
+      class="paw"
+      style="left: 34.9029vw; bottom: -50px; animation-duration: 16.8521s; font-size: 1.08246rem; opacity: 0.314631;">🐾</span>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="PetLovers início">
+        <!-- Logo mais moderna e amigável -->
+        <svg class="brand-logo" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M464 128a64 64 0 0 0-64-64h-16c-17.67 0-32 14.33-32 32s14.33 32 32 32h16a32 32 0 0 1 0 64H112a32 32 0 0 1 0-64h16c17.67 0 32-14.33 32-32s-14.33-32-32-32H64A64 64 0 0 0 0 128v256a64 64 0 0 0 64 64h384a64 64 0 0 0 64-64V128z"
+            fill="#f0e2d5"></path>
+          <circle cx="128" cy="320" fill="#2bb3a3" r="48"></circle>
+          <circle cx="384" cy="320" fill="#ff8a3d" r="48"></circle>
+          <path
+            d="m303.35 152.63-23.33-23.33a32.76 32.76 0 0 0-46.3 0l-23.33 23.33a10.66 10.66 0 0 0 0 15.09l92.96 92.96a10.66 10.66 0 0 0 15.09 0l9.24-9.24a32.76 32.76 0 0 0 0-46.3z"
+            fill="#ff8a3d"></path>
+          <path d="M224 96a32 32 0 0 1 32-32h16V32a32 32 0 0 1 64 0v32h16a32 32 0 0 1 32 32v16H224V96z" fill="#f0e2d5">
+          </path>
+        </svg>
+        
+        <span class="brand-name">Pet <span>Lovers</span></span>
+        
+      </a>
+      <nav class="nav" id="mainNav" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#loja">Loja</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato" class="nav-cta btn btn-primary btn-lg">Contato</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero" data-cta="hero" data-cta-location="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal in">
+          <span class="eyebrow" id="heroEyebrow">🐾 Pet Shop em Belo Horizonte</span>
+          <h1 id="heroHeadline">O carinho que o seu melhor amigo <span class="hl">merece de verdade</span></h1>
+          <p class="lead" id="heroLead">Você já imaginou um lugar onde cães e gatos saem mais felizes do que chegaram? Na PetLovers isso acontece todos os dias — e os tutores não conseguem parar de comentar. Quer descobrir o porquê?</p>
+          <div class="hero-actions">
+            <a id="heroPrimaryBtn" href="#contato" class="btn btn-primary btn-lg">Agende um banho &amp; tosa</a>
+            <a id="heroSecondaryBtn" href="#avaliacoes" class="btn btn-ghost btn-lg">Ver avaliações</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong data-count="4.9" id="statRating">4,9</strong><span class="star-color">★★★★★</span></div>
+            <div><strong data-count="12000"
+                id="statCustomers">12000</strong><span>pets felizes</span></div>
+            <div><strong data-count="8"
+                id="statYears">8</strong><span>anos de amor</span></div>
+          </div>
+        </div>
+        <div class="hero-media reveal in">
+          <!-- Wrapper para Slideshow de imagens Reais e Felizes -->
+          <div class="hero-image-wrap" id="heroImageWrap">
+            <!-- As imagens reais (Unsplash) são inseridas dinamicamente pelo app.js -->
+            <div id="heroBadgeWrap">
+              <div class="floating-badge badge-1">🦴 Banho + Tosa</div>
+              <div class="floating-badge badge-2">😻 100% amor</div>
+              <div class="floating-badge badge-3">🐕 Profissionais Certificados</div>
+            </div>
+            
+              <img
+                src="./assets/slides/hero_pet_feliz_1.jpeg"
+                alt="Pet feliz na PetLovers 1" class="hero-slide active" loading="lazy">
+            
+              <img
+                src="./assets/slides/hero_pet_feliz_2.jpeg"
+                alt="Pet feliz na PetLovers 2" class="hero-slide " loading="lazy">
+            
+              <img
+                src="./assets/slides/hero_pet_feliz_3.jpeg"
+                alt="Pet feliz na PetLovers 3" class="hero-slide " loading="lazy">
+            
+          </div>
+        </div>
+      </div>
+      <div class="wave-divider" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="services" id="servicos" data-cta="serviços" data-cta-location="serviços">
+      <div class="container">
+        <div class="section-head reveal in">
+          <span class="eyebrow">Nossos Serviços</span>
+          <h2>Cuidado completo para pura alegria</h2>
+          <p>Do banho relaxante à nutrição perfeita, cada detalhe é pensado para o bem-estar do seu melhor amigo.</p>
+        </div>
+        <div class="cards">
+          
+            <article class="card reveal in">
+              <img class="card-ico" src="./assets/servicos/servico_1_banho_e_tosa.png" alt="Serviço de banho e tosa" loading="lazy">
+              <h3>Banho &amp; Tosa</h3>
+              <p>Especialistas e produtos premium. Seu pet sai renovado, fofinho e muito cheiroso.</p>
+            </article>
+          
+            <article class="card reveal in">
+              <img class="card-ico" src="./assets/servicos/servico_2_spa.png" alt="Espaço para tratamento completo do seu pet" loading="lazy">
+              <h3>Espaço para Pets</h3>
+              <p>Ambiente &#39;Pet Friendly&#39; exclusivo, calmo e seguro para relaxar o seu melhor amigo.</p>
+            </article>
+          
+            <article class="card reveal in">
+              <img class="card-ico" src="./assets/servicos/servico_3_mercado_para_pets.png" alt="Mercado para pets" loading="lazy">
+              <h3>Mercado para Pet</h3>
+              <p>Rações premium, brinquedos e acessórios selecionados com amor e rigor técnico.</p>
+            </article>
+          
+            <article class="card reveal in">
+              <img class="card-ico" src="./assets/servicos/servico_4_brinquedos_para_pet.png" alt="Brinquedos para  Pet" loading="lazy">
+              <h3>Brinquedos para  Pet</h3>
+              <p>Diversão e conforto para o seu melhor amigo.</p>
+            </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Gallery (Efeito Sanfona Moderno) ===== -->
+    <section class="gallery" id="galeria" data-cta="galeria" data-cta-location="galeria">
+      <div class="container">
+        <div class="section-head reveal in">
+          <span class="eyebrow">Depoimentos de clientes</span>
+          <h2>A alegria deles é nossa missão</h2>
+          <p>Alguns dos nossos clientes mais fofos curtindo o dia na PetLovers.</p>
+        </div>
+        <!-- Estrutura alterada para Galeria Flexível (Accordion) -->
+        <div class="gallery-flex reveal in">
+          
+            <figure class="g-item">
+              <img
+                src="./assets/depoimentos/depoimento_1_banho_cachorro.jpg"
+                alt="Depoimento: Meu cachorro saiu do banho super feliz e cheiroso! Atendimento excelente." loading="lazy">
+              <figcaption>Dia de SPA 🛁</figcaption>
+            </figure>
+          
+            <figure class="g-item">
+              <img
+                src="./assets/depoimentos/depoimento_2_gato_comendo_racao.jpeg"
+                alt="Depoiomento: Meu gato ama a ração que comprei na PetLovers. Ele come com muito entusiasmo!" loading="lazy">
+              <figcaption>Hora do lanche 🍔</figcaption>
+            </figure>
+          
+            <figure class="g-item">
+              <img
+                src="./assets/depoimentos/depoimento_3_cachorro_com_cone.jpeg"
+                alt="Depoimento: Meu cachorro foi bem cuidado durante a tosa. A equipe é muito atenciosa e profissional." loading="lazy">
+              <figcaption>Dia de cuidar 🩺</figcaption>
+            </figure>
+          
+            <figure class="g-item">
+              <img
+                src="./assets/depoimentos/depoimento_4_bato_brincando.jpg"
+                alt="Depoimento: Meu gato adora brincar com os brinquedos da PetLovers. É o melhor lugar para ele!" loading="lazy">
+              <figcaption>Brincadeira tem hora 🤗</figcaption>
+            </figure>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Shop ===== -->
+    <section class="shop" id="loja" data-cta="loja" data-cta-location="loja">
+      <div class="container">
+        <div class="section-head reveal in">
+          <span class="eyebrow">
+            Vitrine Pet <span>Lovers</span>
+          </span>
+          <h2>Os favoritos do seu amigo</h2>
+          <p>Produtos aprovados por quem mais entende de pet. <span class="aff-note">Ao comprar, você apoia nossa loja.</span></p>
+        </div>
+        <div class="product-grid" id="productGrid">
+          
+            <article class="product-card reveal in">
+              <div class="product-thumb">🍖</div>
+              <div class="product-body"><span class="product-tag">Mais vendido</span>
+                <h3>Ração Premium Cães</h3>
+                <div class="rating stat-color">★★★★★</div>
+                <div class="price">R$ 189,90</div><a class="btn btn-primary btn-sm" href=""
+                  rel="sponsored nofollow">Ver oferta</a>
+              </div>
+            </article>
+          
+            <article class="product-card reveal in">
+              <div class="product-thumb">🐱</div>
+              <div class="product-body"><span class="product-tag">Favorito</span>
+                <h3>Ração Gatos Sabor Salmão</h3>
+                <div class="rating stat-color">★★★★★</div>
+                <div class="price">R$ 149,90</div><a class="btn btn-primary btn-sm" href=""
+                  rel="sponsored nofollow">Ver oferta</a>
+              </div>
+            </article>
+          
+            <article class="product-card reveal in">
+              <div class="product-thumb">🧸</div>
+              <div class="product-body"><span class="product-tag">Diversão</span>
+                <h3>Kit Brinquedos Pet</h3>
+                <div class="rating stat-color">★★★★</div>
+                <div class="price">R$ 79,90</div><a class="btn btn-primary btn-sm" href=""
+                  rel="sponsored nofollow">Ver oferta</a>
+              </div>
+            </article>
+          
+            <article class="product-card reveal in">
+              <div class="product-thumb">🛏️</div>
+              <div class="product-body"><span class="product-tag">Conforto</span>
+                <h3>Caminha Fofinha</h3>
+                <div class="rating stat-color">★★★★★</div>
+                <div class="price">R$ 129,90</div><a class="btn btn-primary btn-sm" href=""
+                  rel="sponsored nofollow">Ver oferta</a>
+              </div>
+            </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reviews (Carrossel Infinito) ===== -->
+    <section class="reviews" id="avaliacoes" data-cta="avaliacoes" data-cta-location="avaliacoes">
+      <div class="container">
+        <div class="section-head reveal in">
+          <span class="eyebrow">Quem AMA, aprova</span>
+          <h2>Amor em forma de depoimentos</h2>
+          <p>Veja o que os tutores dizem sobre a experiência PetLovers.</p>
+        </div>
+        <!-- Estrutura para carrossel infinito -->
+        <div class="reviews-carousel reveal in">
+          <div class="reviews-track" id="reviewsTrack" style="transform: translateX(-870px);">
+            
+              <article class="review-card" data-index="0">
+                <div class="review-stars star-color" aria-label="5 de 5 estrelas">★★★★★</div>
+                <p class="review-text">"Meu cachorro AMA ir na PetLovers! Sai lindo e cheiroso todas as vezes. Atendimento nota mil."</p>
+                <div class="review-user"><img src="https://randomuser.me/api/portraits/men/75.jpg"
+                    alt="Cliente da PetLovers" loading="lazy">
+                  <div><strong>Ana C.</strong><span>Tutora do Thor 🐕</span></div>
+                </div>
+              </article>
+            
+              <article class="review-card" data-index="1">
+                <div class="review-stars star-color" aria-label="5 de 5 estrelas">★★★★★</div>
+                <p class="review-text">"Nunca vi meu gato tão calmo depois do banho. Equipe atenciosa e apaixonada por bichinhos!"</p>
+                <div class="review-user"><img src="https://randomuser.me/api/portraits/women/68.jpg"
+                    alt="Cliente da PetLovers" loading="lazy">
+                  <div><strong>Rafael M.</strong><span>Tutor da Mia 🐈</span></div>
+                </div>
+              </article>
+            
+              <article class="review-card" data-index="2">
+                <div class="review-stars star-color" aria-label="5 de 5 estrelas">★★★★★</div>
+                <p class="review-text">"O leva e traz salvou minha rotina. Confio de olhos fechados na PetLovers."</p>
+                <div class="review-user"><img src="https://randomuser.me/api/portraits/women/68.jpg"
+                    alt="Cliente da PetLovers" loading="lazy">
+                  <div><strong>Juliana P.</strong><span>Tutora do Bono 🐶</span></div>
+                </div>
+              </article>
+            
+              <article class="review-card" data-index="3">
+                <div class="review-stars star-color" aria-label="5 de 5 estrelas">★★★★★</div>
+                <p class="review-text">"Produtos ótimos e preço justo. Recomendo demais para todo mundo do bairro!"</p>
+                <div class="review-user"><img src="https://randomuser.me/api/portraits/women/68.jpg"
+                    alt="Cliente da PetLovers" loading="lazy">
+                  <div><strong>Marcos L.</strong><span>Tutor da Lola 🐩</span></div>
+                </div>
+              </article>
+            
+              <article class="review-card" data-index="4">
+                <div class="review-stars star-color" aria-label="4 de 5 estrelas">★★★★</div>
+                <p class="review-text">"Ambiente limpo e cheiroso, meus dois gatos foram super bem cuidados."</p>
+                <div class="review-user"><img src="https://randomuser.me/api/portraits/women/68.jpg"
+                    alt="Cliente da PetLovers" loading="lazy">
+                  <div><strong>Beatriz S.</strong><span>Tutora de 2 gatos 🐱</span></div>
+                </div>
+              </article>
+            
+              <article class="review-card" data-index="5">
+                <div class="review-stars star-color" aria-label="5 de 5 estrelas">★★★★★</div>
+                <p class="review-text">"Meu filhote ficou fofo demais depois da tosa. Voltarei sempre!"</p>
+                <div class="review-user"><img src="https://randomuser.me/api/portraits/men/75.jpg"
+                    alt="Cliente da PetLovers" loading="lazy">
+                  <div><strong>Diego R.</strong><span>Tutor do Pipoca 🐾</span></div>
+                </div>
+              </article>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Location / Google Maps ===== -->
+    <section class="location" id="localizacao" data-cta="localizacao" data-cta-location="localizacao">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-info reveal in">
+            <span class="eyebrow">Vem Visitar</span>
+            <h2>Nossa casinha em BH</h2>
+            <p class="loc-lead">Ambiente acolhedor pronto para receber você e seu amigo.</p>
+            <ul class="location-list">
+              <li>
+                <span class="li-ico">📍</span>
+                <div>
+                  <strong>Endereço</strong>
+                  <p id="locationAddress">Av. Afonso Pena, 1500 — Centro<br>Belo Horizonte — MG</p>
+                </div>
+              </li>
+              <li>
+                <span class="li-ico">🕒</span>
+                <div>
+                  <strong>Horário</strong>
+                  <p id="locationHours">
+                    
+                      Seg a Sex: 8h às 19h
+
+                      <br>
+                    
+                      Sábado: 8h às 16h
+
+                       
+                    
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="li-ico">📞</span>
+                <div>
+                  <strong>Telefone</strong>
+                  <p><a id="locationPhone" href="tel:+553199999999">(31) 99999-9999</a></p>
+                </div>
+              </li>
+            </ul>
+            <a class="btn btn-primary btn-block" id="locationMapsLink"
+              href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Afonso+Pena+1500+Belo+Horizonte+MG"
+              target="_blank" rel="noopener">Traçar rota no Google Maps</a>
+          </div>
+          <div class="map-frame reveal in">
+            <iframe id="locationMapFrame" title="Localização da PetLovers"
+              src="https://www.google.com/maps?q=Av.+Afonso+Pena+1500+Belo+Horizonte+MG&amp;output=embed"
+              width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact / CTA ===== -->
+    <section class="contact" id="contato" data-cta="contato" data-cta-location="contato">
+      <div class="container contact-inner reveal in">
+        <div class="contact-copy">
+          <h2>Vamos agendar um dia de alegria?</h2>
+          <p>Tire dúvidas ou agende o horário do seu amigo. A gente adora conversar sobre bichinhos!</p>
+          <ul class="contact-list">
+            <li><span class="ci">📞</span> <a id="contactPhone" href="tel:+553199999999">(31) 99999-9999</a></li>
+            <li><span class="ci">✉️</span> <a id="contactEmail"
+                href="mailto:contato@petlovers.com">contato@petlovers.com</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate="">
+          <div class="field">
+            <label for="nome">Seu nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Como te chamamos?" required="">
+          </div>
+          <div class="field">
+            <label for="email">Seu e-mail</label>
+            <input id="email" name="email" type="email" placeholder="voce@email.com" required="">
+          </div>
+          <div class="field">
+            <label for="mensagem">Sobre seu pet</label>
+            <textarea id="mensagem" name="mensagem" rows="2" placeholder="Nome, espécie, raça... 🐾"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Quero Agendar</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <!-- Logo mais moderna e amigável -->
+        <svg class="brand-logo" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M464 128a64 64 0 0 0-64-64h-16c-17.67 0-32 14.33-32 32s14.33 32 32 32h16a32 32 0 0 1 0 64H112a32 32 0 0 1 0-64h16c17.67 0 32-14.33 32-32s-14.33-32-32-32H64A64 64 0 0 0 0 128v256a64 64 0 0 0 64 64h384a64 64 0 0 0 64-64V128z"
+            fill="#fff7ef" opacity=".6"></path>
+          <circle cx="128" cy="320" fill="#2bb3a3" r="48"></circle>
+          <circle cx="384" cy="320" fill="#ff8a3d" r="48"></circle>
+          <path
+            d="m303.35 152.63-23.33-23.33a32.76 32.76 0 0 0-46.3 0l-23.33 23.33a10.66 10.66 0 0 0 0 15.09l92.96 92.96a10.66 10.66 0 0 0 15.09 0l9.24-9.24a32.76 32.76 0 0 0 0-46.3z"
+            fill="#ff8a3d"></path>
+          <path d="M224 96a32 32 0 0 1 32-32h16V32a32 32 0 0 1 64 0v32h16a32 32 0 0 1 32 32v16H224V96z" fill="#fff7ef">
+          </path>
+        </svg>
+        <span class="brand-name">
+          
+          Pet <span>Lovers</span>
+          
+        </span>
+        <p id="brandTagline">Amor de verdade pelo seu melhor amigo, todos os dias.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#loja">Loja</a>
+        <a href="#avaliacoes">Avaliações</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a id="footerPhone" href="tel:+553199999999">(31) 99999-9999</a>
+        <a id="footerEmail" href="mailto:contato@petlovers.com">contato@petlovers.com</a>
+        <span id="footerAddress">Centro / Belo Horizonte — MG</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> PetLovers. Feito com 🧡 por Tutores Apaixonados.</p>
+    </div>
+  </footer>
+
+  <!-- ===== WhatsApp Floating Button ===== -->
+  <a href="https://wa.me/553199999999?text=Olá%20PetLovers%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços."
+    class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contatar pelo WhatsApp"
+    title="Fale conosco no WhatsApp">
+    <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="40" height="40">
+      <!-- Fundo verde oficial do WhatsApp -->
+      <circle cx="224" cy="256" r="210" fill="#25D366"></circle>
+      <!-- Ícone do telefone branco -->
+      <path fill="#FFF"
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+      </path>
+    </svg>
+
+  </a>
+
+
+
+  <script src="app.js"></script>
+  
+  <script>
+    // GTM dataLayer
+    window.dataLayer.push({
+      event: 'generate_lead',
+      lead_source: 'formulario_contato',
+      form_id: 'contactForm'
+    });
+    let scrollMarks = { 25: false, 50: false, 75: false };
+
+    window.addEventListener('scroll', function () {
+      const scrollPercent = Math.round(
+        (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100
+      );
+
+      Object.keys(scrollMarks).forEach(function (mark) {
+        
+          console.log(`Scroll percent: ${scrollPercent}, Mark: ${mark}`);
+        
+        if (scrollPercent >= mark && !scrollMarks[mark]) {
+          scrollMarks[mark] = true;
+          gtag('event', 'scroll', { percent_scrolled: mark });
+        }
+      });
+    });
+
+    // gtag.js
+    document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach(link => {
+      link.addEventListener('click', function () {
+        
+          console.log('WhatsApp link clicked:', link.href);
+        
+        gtag('event', 'click_whatsapp', {
+          link_url: link.href,
+          section: link.closest('section')?.id || 'desconhecida'
+        });
+      });
+    });
+
+    var form = document.getElementById('contactForm');
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      var nome = document.getElementById('nome').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var mensagem = document.getElementById('mensagem').value.trim();
+
+      const dados = {
+        nome: nome,
+        email: email,
+        mensagem: mensagem
+      };
+
+      
+        console.log('Form data:', dados);
+      
+
+      
+
+      
+          gtag('event', 'generate_lead', {
+            currency: 'BRL',
+            value: 0, // opcional: valor estimado do lead
+            lead_source: 'formulario_contato'
+          });
+      
+    });
+
+    let formStarted = false;
+
+    form.addEventListener('focusin', function () {
+      if (!formStarted) {
+        
+          console.log('Form interaction started');
+        
+        formStarted = true;
+        gtag('event', 'form_start', {
+          form_id: 'contactForm'
+        });
+      }
+    });
+
+    document.querySelectorAll('[data-cta]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        
+          console.log('CTA clicked:', btn.dataset.cta, 'Location:', btn.dataset.ctaLocation);
+        
+        gtag('event', 'cta_click', {
+          cta_name: btn.dataset.cta,
+          cta_location: btn.dataset.ctaLocation
+        });
+      });
+    });
+  </script>
+  
+
+</body>
+
+</html>
