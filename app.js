@@ -52,9 +52,9 @@
     }
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        if (e.isIntersecting) { 
-          e.target.classList.add("in"); 
-          io.unobserve(e.target); 
+        if (e.isIntersecting) {
+          e.target.classList.add("in");
+          io.unobserve(e.target);
         }
       });
     }, { threshold: 0.15 }); // Limiar um pouco maior para animação mais visível
@@ -112,12 +112,12 @@
 
     var slides = wrap.querySelectorAll('.hero-slide');
     if (slides.length === 0) return;
-    
+
     var current = 0;
     // Adiciona a classe active à primeira imagem
     slides[current].classList.add('active');
-    
-    setInterval(function() {
+
+    setInterval(function () {
       if (document.hidden || slides.length < 2) return;
       slides[current].classList.remove('active');
       current = (current + 1) % slides.length;
@@ -128,12 +128,12 @@
   function initReviewsCarousel() {
     var track = document.getElementById("reviewsTrack");
     if (!track) return;
-    
+
     var cards = track.querySelectorAll('.review-card');
     if (cards.length === 0) return;
-    
+
     // Clona todos os cards para criar o loop infinito
-    cards.forEach(function(card) {
+    cards.forEach(function (card) {
       var clone = card.cloneNode(true);
       track.appendChild(clone);
     });
@@ -143,18 +143,42 @@
     var form = document.getElementById("contactForm");
     if (!form) return;
     var status = document.getElementById("formStatus");
+    var successCard = document.getElementById("formSuccessCard");
+    var successCardName = document.getElementById("successCardName");
+    var letterContent = document.getElementById("letter-content");
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var nome = form.nome.value.trim();
       var email = form.email.value.trim();
+      var mensagem = form.mensagem.value.trim();
       if (!nome || !/^\S+@\S+\.\S+$/.test(email)) {
         status.className = "form-status error";
         status.textContent = "Preencha nome e um e-mail válido, por favor. 🐾";
         return;
       }
-      status.className = "form-status success";
-      status.textContent = "Recebido, " + nome.split(" ")[0] + "! Entraremos em contato em breve. 🧡";
-      form.reset();
+
+      // Esconder formulário e mostrar card de sucesso
+      form.classList.add("form-hidden");
+      successCardName.textContent = nome.split(" ")[0] + ", logo entraremos em contato! 🧡";
+      letterContent.innerHTML = mensagem.split('\n')
+        .filter(linha => linha.trim() !== '') // Opcional: remove linhas totalmente em branco
+        .map(linha => `<p>${linha}</p>`)
+        .join('\n');
+      successCard.classList.add("form-success-card-show");
+      // Garante que a div possa receber foco via script sem entrar na navegação por TAB do usuário
+      successCard.setAttribute('tabindex', '-1');
+
+      // Rola a tela até o card suavemente (opcional, mas recomendado)
+      successCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Aplica o foco no card
+      successCard.focus();
+
+      // Resetar formulário após a animação
+      setTimeout(function () {
+        form.reset();
+      }, 500);
     });
   }
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Página Principal / Landing Page -->
+  <url>
+    <loc>{{config.empresa.dominio}}/</loc>
+    <lastmod>{{config.lastmod}}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Imagens principais otimizadas para o Google Imagens -->
+    {% for service in config.services.list %}
+      <image:image>
+        <image:loc>{{config.empresa.dominio}}{{service.src | replace('./', '/')}}</image:loc>
+        <image:title>{{service.h3}}</image:title>
+        <image:caption>{{service.alt}}</image:caption>
+      </image:image>
+    {% endfor %}
+  </url>
+
+</urlset>

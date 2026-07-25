@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://romulinux.github.io/landing-page-template/sitemap.xml

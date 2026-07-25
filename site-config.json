@@ -1,5 +1,8 @@
 {
   "empresa": {
+    "dominio": "https://romulinux.github.io/landing-page-template",
+    "instagram": "petlovers",
+    "facebook": "petlovers",
     "nome": "PetLovers",
     "brandName": "Pet<span>Lovers</span>",
     "brand": {
@@ -14,20 +17,27 @@
     "funcionamento": [
       {
         "periodo": "Seg a Sex",
-        "horario": "8h às 19h"
+        "horario": "8h às 19h",
+        "inicio": "08:00",
+        "fim": "19:00"
       },
       {
         "periodo": "Sábado",
-        "horario": "8h às 16h"
+        "horario": "8h às 16h",
+        "inicio": "08:00",
+        "fim": "16:00"
       }
     ]
   },
   "site": {
-    "title": "PetLovers — Pet Shop que ama o seu melhor amigo",
+    "title": "Pet Shop em Belo Horizonte — Banho, Tosa e Cuidados Especiais",
     "description": "PetLovers é o pet shop que cuida do seu cão e gato com carinho de verdade. Banho, tosa, produtos e muito amor. Descubra por que tantos tutores confiam na gente.",
     "brandTagline": "Amor de verdade pelo seu melhor amigo, todos os dias.",
     "og": {
-      "image": "./assets/og-image.png"
+      "image": "./assets/icons/favicon.svg"
+    },
+    "logo": {
+      "src": "./assets/icons/logo.svg"
     }
   },
   "hero": {
@@ -75,7 +85,7 @@
       "src": "./assets/produtos/produto_racao_para_cachorro.png",
       "tag": "Mais vendido",
       "name": "Ração Premium Cães",
-      "price": "R$ 189,90",
+      "price": "189,90",
       "stars": 5,
       "url": "#"
     },
@@ -84,7 +94,7 @@
       "src": "./assets/produtos/produto_racao_para_gato.png",
       "tag": "Favorito",
       "name": "Ração Gatos Sabor Salmão",
-      "price": "R$ 149,90",
+      "price": "149,90",
       "stars": 5,
       "url": "#"
     },
@@ -93,7 +103,7 @@
       "src": "./assets/produtos/produto_brinquedo_para_pet.png",
       "tag": "Diversão",
       "name": "Kit Brinquedos Pet",
-      "price": "R$ 79,90",
+      "price": "79,90",
       "stars": 4,
       "url": "#"
     },
@@ -102,7 +112,7 @@
       "src": "./assets/produtos/produto_caminha_para_pet.png",
       "tag": "Conforto",
       "name": "Caminha Fofinha",
-      "price": "R$ 129,90",
+      "price": "129,90",
       "stars": 5,
       "url": "#"
     }
@@ -232,7 +242,9 @@
       "bairro": "Centro",
       "cidade": "Belo Horizonte",
       "estado": "MG",
-      "cep": "30130-921"
+      "cep": "30130-921",
+      "latitude": "-19.9208",
+      "longitude": "-43.9327"
     }
   },
   "googleMaps": {

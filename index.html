@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetLovers — Pet Shop que ama o seu melhor amigo</title>
+  <title>Pet Shop em Belo Horizonte — Banho, Tosa e Cuidados Especiais</title>
   <meta name="description" content="PetLovers é o pet shop que cuida do seu cão e gato com carinho de verdade. Banho, tosa, produtos e muito amor. Descubra por que tantos tutores confiam na gente.">
+  <meta name="geo.region" content="BR-MG" />
+  <meta name="geo.placename" content="Belo Horizonte" />
+  <meta name="geo.position" content="-19.9208;-43.9327" />
+  <meta name="ICBM" content="-19.9208, -43.9327" />
+
   <meta name="theme-color" content="#ff8a3d">
 
   <!-- Favicon / Logo -->
-  <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
-  <link rel="apple-touch-icon" href="./assets/icons/favicon.png">
+  <link rel="icon" type="image/png" href="./assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="./assets/icons/favicon.svg">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="PetLovers — Pet Shop que ama o seu melhor amigo">
+  <meta property="og:title" content="Pet Shop em Belo Horizonte — Banho, Tosa e Cuidados Especiais">
   <meta property="og:description" content="PetLovers é o pet shop que cuida do seu cão e gato com carinho de verdade. Banho, tosa, produtos e muito amor. Descubra por que tantos tutores confiam na gente.">
   <meta property="og:image"
     content="./assets/icons/favicon.png">
@@ -35,6 +40,62 @@
     gtag('js', new Date());
 
     gtag('config', 'G-YT7Z02SDSC');
+  </script>
+
+  <!-- 2. Dados Estruturados Schema.org (JSON-LD) para PetShop Local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PetStore",
+    "name": "PetLovers",
+    "image": "https://romulinux.github.io/landing-page-template/assets/icons/favicon.png",
+    "@id": "https://romulinux.github.io/landing-page-template/#petshop",
+    "url": "https://romulinux.github.io/landing-page-template",
+    "telephone": "5531975292178",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Afonso Pena, 1500",
+      "addressLocality": "Belo Horizonte",
+      "addressRegion": "MG",
+      "postalCode": "30130-921",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -19.9208,
+      "longitude": -43.9327
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "16:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "",
+      "reviewCount": ""
+    },
+    "sameAs": [
+      "https://www.instagram.com/petlovers",
+      "https://www.facebook.com/petlovers"
+    ]
+  }
   </script>
 </head>
 
@@ -62,18 +123,7 @@
     <div class="container header-inner">
       <a href="#hero" class="brand" aria-label="PetLovers início">
         <!-- Logo mais moderna e amigável -->
-        <svg class="brand-logo" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M464 128a64 64 0 0 0-64-64h-16c-17.67 0-32 14.33-32 32s14.33 32 32 32h16a32 32 0 0 1 0 64H112a32 32 0 0 1 0-64h16c17.67 0 32-14.33 32-32s-14.33-32-32-32H64A64 64 0 0 0 0 128v256a64 64 0 0 0 64 64h384a64 64 0 0 0 64-64V128z"
-            fill="#f0e2d5"></path>
-          <circle cx="128" cy="320" fill="#2bb3a3" r="48"></circle>
-          <circle cx="384" cy="320" fill="#ff8a3d" r="48"></circle>
-          <path
-            d="m303.35 152.63-23.33-23.33a32.76 32.76 0 0 0-46.3 0l-23.33 23.33a10.66 10.66 0 0 0 0 15.09l92.96 92.96a10.66 10.66 0 0 0 15.09 0l9.24-9.24a32.76 32.76 0 0 0 0-46.3z"
-            fill="#ff8a3d"></path>
-          <path d="M224 96a32 32 0 0 1 32-32h16V32a32 32 0 0 1 64 0v32h16a32 32 0 0 1 32 32v16H224V96z" fill="#f0e2d5">
-          </path>
-        </svg>
+        <img src="./assets/icons/logo.svg" alt="Logo PetLovers" class="brand-logo brand-logo-img">
         
         <span class="brand-name">Pet <span>Lovers</span></span>
         
@@ -124,15 +174,15 @@
             
               <img
                 src="./assets/slides/hero_pet_feliz_1.jpeg"
-                alt="Pet feliz na PetLovers 1" class="hero-slide active" loading="lazy">
+                alt="Pet feliz na PetLovers 1" class="hero-slide active" fetchpriority="high">
             
               <img
                 src="./assets/slides/hero_pet_feliz_2.jpeg"
-                alt="Pet feliz na PetLovers 2" class="hero-slide " loading="lazy">
+                alt="Pet feliz na PetLovers 2" class="hero-slide "  loading="lazy">
             
               <img
                 src="./assets/slides/hero_pet_feliz_3.jpeg"
-                alt="Pet feliz na PetLovers 3" class="hero-slide " loading="lazy">
+                alt="Pet feliz na PetLovers 3" class="hero-slide "  loading="lazy">
             
           </div>
         </div>
@@ -233,42 +283,58 @@
         </div>
         <div class="product-grid" id="productGrid">
           
-            <article class="product-card reveal in">
+            <article class="product-card reveal in" itemscope itemtype="https://schema.org/Product">
               <div class="product-thumb">🍖</div>
               <div class="product-body"><span class="product-tag">Mais vendido</span>
-                <h3>Ração Premium Cães</h3>
+                <h3 itemprop="name">Ração Premium Cães</h3>
                 <div class="rating stat-color">★★★★★</div>
-                <div class="price">R$ 189,90</div><a class="btn btn-primary btn-sm" href=""
+                <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                 <span itemprop="priceCurrency" content="BRL">R$</span>
+                 <span itemprop="price" content="189.90">189,90</span>
+                </div>
+                <a class="btn btn-primary btn-sm" href=""
                   rel="sponsored nofollow">Ver oferta</a>
               </div>
             </article>
           
-            <article class="product-card reveal in">
+            <article class="product-card reveal in" itemscope itemtype="https://schema.org/Product">
               <div class="product-thumb">🐱</div>
               <div class="product-body"><span class="product-tag">Favorito</span>
-                <h3>Ração Gatos Sabor Salmão</h3>
+                <h3 itemprop="name">Ração Gatos Sabor Salmão</h3>
                 <div class="rating stat-color">★★★★★</div>
-                <div class="price">R$ 149,90</div><a class="btn btn-primary btn-sm" href=""
+                <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                 <span itemprop="priceCurrency" content="BRL">R$</span>
+                 <span itemprop="price" content="149.90">149,90</span>
+                </div>
+                <a class="btn btn-primary btn-sm" href=""
                   rel="sponsored nofollow">Ver oferta</a>
               </div>
             </article>
           
-            <article class="product-card reveal in">
+            <article class="product-card reveal in" itemscope itemtype="https://schema.org/Product">
               <div class="product-thumb">🧸</div>
               <div class="product-body"><span class="product-tag">Diversão</span>
-                <h3>Kit Brinquedos Pet</h3>
+                <h3 itemprop="name">Kit Brinquedos Pet</h3>
                 <div class="rating stat-color">★★★★</div>
-                <div class="price">R$ 79,90</div><a class="btn btn-primary btn-sm" href=""
+                <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                 <span itemprop="priceCurrency" content="BRL">R$</span>
+                 <span itemprop="price" content="79.90">79,90</span>
+                </div>
+                <a class="btn btn-primary btn-sm" href=""
                   rel="sponsored nofollow">Ver oferta</a>
               </div>
             </article>
           
-            <article class="product-card reveal in">
+            <article class="product-card reveal in" itemscope itemtype="https://schema.org/Product">
               <div class="product-thumb">🛏️</div>
               <div class="product-body"><span class="product-tag">Conforto</span>
-                <h3>Caminha Fofinha</h3>
+                <h3 itemprop="name">Caminha Fofinha</h3>
                 <div class="rating stat-color">★★★★★</div>
-                <div class="price">R$ 129,90</div><a class="btn btn-primary btn-sm" href=""
+                <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                 <span itemprop="priceCurrency" content="BRL">R$</span>
+                 <span itemprop="price" content="129.90">129,90</span>
+                </div>
+                <a class="btn btn-primary btn-sm" href=""
                   rel="sponsored nofollow">Ver oferta</a>
               </div>
             </article>
@@ -361,7 +427,12 @@
                 <span class="li-ico">📍</span>
                 <div>
                   <strong>Endereço</strong>
-                  <p id="locationAddress">Av. Afonso Pena, 1500 — Centro<br>Belo Horizonte — MG</p>
+                  <address id="locationAddress" itemscope itemtype="https://schema.org/PostalAddress">
+                    <strong itemprop="name">PetLovers Belo Horizonte</strong><br>
+                    <span itemprop="streetAddress">Av. Afonso Pena, 1500</span> — <span itemprop="addressLocality">Centro</span><br>
+                    <span itemprop="addressRegion">Belo Horizonte — MG</span><br>
+                    Telefone: <a href="tel:+5531975292178" itemprop="telephone">(31) 97529-2178</a>
+                  </address>
                 </div>
               </li>
               <li>
@@ -418,19 +489,32 @@
         <form class="contact-form" id="contactForm" novalidate="">
           <div class="field">
             <label for="nome">Seu nome</label>
-            <input id="nome" name="nome" type="text" placeholder="Como te chamamos?" required="">
+            <input id="nome" name="nome" type="text" placeholder="Como te chamamos?" required=true>
           </div>
           <div class="field">
             <label for="email">Seu e-mail</label>
-            <input id="email" name="email" type="email" placeholder="voce@email.com" required="">
+            <input id="email" name="email" type="email" placeholder="voce@email.com" required=true>
           </div>
           <div class="field">
             <label for="mensagem">Sobre seu pet</label>
-            <textarea id="mensagem" name="mensagem" rows="2" placeholder="Nome, espécie, raça... 🐾"></textarea>
+            <textarea id="mensagem" name="mensagem" rows="2" placeholder="Nome, espécie, raça... 🐾" required min-lenght="3"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block btn-lg">Quero Agendar</button>
           <p class="form-status" id="formStatus" role="status"></p>
         </form>
+        <div class="form-success-card" id="formSuccessCard" role="status" aria-live="polite">
+          <div class="success-card-content">
+            <div class="letter">
+              <div class="letter-top"></div>
+              <div class="letter-front"></div>
+              <div class="letter-content" id="letter-content"></div>
+              <div class="letter-back"></div>
+            </div>
+            <h3>E-mail enviado</h3>
+            <p>Agora é só aguardar o contato da nossa equipe</p>
+            <p class="success-card-name" id="successCardName"></p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="whatsapp" id="whatsapp" data-cta="whatsapp" data-cta-location="whatsapp">
@@ -455,23 +539,14 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <!-- Logo mais moderna e amigável -->
-        <svg class="brand-logo" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M464 128a64 64 0 0 0-64-64h-16c-17.67 0-32 14.33-32 32s14.33 32 32 32h16a32 32 0 0 1 0 64H112a32 32 0 0 1 0-64h16c17.67 0 32-14.33 32-32s-14.33-32-32-32H64A64 64 0 0 0 0 128v256a64 64 0 0 0 64 64h384a64 64 0 0 0 64-64V128z"
-            fill="#fff7ef" opacity=".6"></path>
-          <circle cx="128" cy="320" fill="#2bb3a3" r="48"></circle>
-          <circle cx="384" cy="320" fill="#ff8a3d" r="48"></circle>
-          <path
-            d="m303.35 152.63-23.33-23.33a32.76 32.76 0 0 0-46.3 0l-23.33 23.33a10.66 10.66 0 0 0 0 15.09l92.96 92.96a10.66 10.66 0 0 0 15.09 0l9.24-9.24a32.76 32.76 0 0 0 0-46.3z"
-            fill="#ff8a3d"></path>
-          <path d="M224 96a32 32 0 0 1 32-32h16V32a32 32 0 0 1 64 0v32h16a32 32 0 0 1 32 32v16H224V96z" fill="#fff7ef">
-          </path>
-        </svg>
-        <span class="brand-name">
-          
-          Pet <span>Lovers</span>
-          
-        </span>
+        <div class="footer-logo">
+          <img src="./assets/icons/logo.svg" alt="Logo PetLovers" class="brand-logo brand-logo-img">
+          <span class="brand-name">
+            
+            Pet <span>Lovers</span>
+            
+          </span>
+        </div>
         <p id="brandTagline">Amor de verdade pelo seu melhor amigo, todos os dias.</p>
       </div>
       <div class="footer-col">
