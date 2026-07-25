@@ -296,10 +296,8 @@
                 <div>
                   <strong>Endereço</strong>
                   <address id="locationAddress" itemscope itemtype="https://schema.org/PostalAddress">
-                    <strong itemprop="name">{{config.empresa.nome}} {{config.location.endereco.cidade}}</strong><br>
-                    <span itemprop="streetAddress">{{config.location.endereco.logradouro}}, {{config.location.endereco.numero}}</span> — <span itemprop="addressLocality">{{config.location.endereco.bairro}}</span><br>
-                    <span itemprop="addressRegion">{{config.location.endereco.cidade}} — {{config.location.endereco.estado}}</span><br>
-                    Telefone: <a href="tel:+{{config.empresa.whatsapp}}" itemprop="telephone">{{config.empresa.displayWhatsapp}}</a>
+                    <span itemprop="streetAddress">{{config.location.endereco.logradouro}}, {{config.location.endereco.numero}}</span> <span itemprop="addressLocality">{{config.location.endereco.bairro}}</span><br>
+                    <span itemprop="addressRegion">{{config.location.endereco.cidade}} {{config.location.endereco.estado}}</span>
                   </address>
                 </div>
               </li>
@@ -320,7 +318,7 @@
                 <span class="li-ico">📞</span>
                 <div>
                   <strong>Telefone</strong>
-                  <p><a id="locationPhone" href="tel:+{{config.empresa.whatsapp}}">{{config.empresa.displayWhatsapp}}</a></p>
+                  <p><a id="locationPhone" href="tel:+{{config.empresa.whatsapp}}" itemprop="telephone">{{config.empresa.displayWhatsapp}}</a></p>
                 </div>
               </li>
             </ul>
@@ -370,11 +368,12 @@
           <div class="success-card-content">
             <div class="letter">
               <div class="letter-top"></div>
-              <div class="letter-front"></div>
+              <div class="letter-front">
+                <div class="letter-font">✅ E-mail enviado</div>
+              </div>
               <div class="letter-content" id="letter-content"></div>
               <div class="letter-back"></div>
             </div>
-            <h3>E-mail enviado</h3>
             <p>Agora é só aguardar o contato da nossa equipe</p>
             <p class="success-card-name" id="successCardName"></p>
           </div>

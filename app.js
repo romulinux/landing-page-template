@@ -152,9 +152,19 @@
       var nome = form.nome.value.trim();
       var email = form.email.value.trim();
       var mensagem = form.mensagem.value.trim();
-      if (!nome || !/^\S+@\S+\.\S+$/.test(email)) {
+      if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
         status.className = "form-status error";
-        status.textContent = "Preencha nome e um e-mail válido, por favor. 🐾";
+        status.textContent = "Preencha um nome válido, por favor. 🐾";
+        return;
+      }
+      if (!nome || nome.length < 3) {
+        status.className = "form-status error";
+        status.textContent = "Preencha um e-mail válido, por favor. 🐾";
+        return;
+      }
+      if (!mensagem || mensagem.length < 10) {
+        status.className = "form-status error";
+        status.textContent = "Preencha uma mensagem válida, por favor. 🐾";
         return;
       }
 
