@@ -1,38 +1,38 @@
 {
   "empresa": {
     "dominio": "https://romulinux.github.io/landing-page-template",
-    "instagram": "petlovers",
-    "facebook": "petlovers",
-    "nome": "PetLovers",
-    "brandName": "Pet<span>Lovers</span>",
+    "instagram": "franciskao_clinicaveterinaria",
+    "facebook": "franciskao_clinicaveterinaria",
+    "nome": "Franciskão",
+    "brandName": "Francis<span>Kão</span>",
     "brand": {
-      "first": "Pet",
-      "last": "Lovers"
+      "first": "Francis",
+      "last": "Kão"
     },
-    "brandTagline": "Amor de verdade pelo seu melhor amigo, todos os dias.",
-    "email": "contato@petlovers.com",
-    "whatsapp": "5531975292178",
-    "displayWhatsapp": "(31) 97529-2178",
+    "brandTagline": "Amor que mia, carinho que late. 💚.",
+    "email": "contato@franciskao.com",
+    "whatsapp": "5531992535290",
+    "displayWhatsapp": "(31) 99253-5290",
     "is24Horas": false,
     "funcionamento": [
       {
         "periodo": "Seg a Sex",
-        "horario": "8h às 19h",
+        "horario": "8h às 20h",
         "inicio": "08:00",
-        "fim": "19:00"
+        "fim": "20:00"
       },
       {
         "periodo": "Sábado",
-        "horario": "8h às 16h",
+        "horario": "8h às 20h",
         "inicio": "08:00",
-        "fim": "16:00"
+        "fim": "20:00"
       }
     ]
   },
   "site": {
-    "title": "Pet Shop em Belo Horizonte — Banho, Tosa e Cuidados Especiais",
-    "description": "PetLovers é o pet shop que cuida do seu cão e gato com carinho de verdade. Banho, tosa, produtos e muito amor. Descubra por que tantos tutores confiam na gente.",
-    "brandTagline": "Amor de verdade pelo seu melhor amigo, todos os dias.",
+    "title": "Pet Shop e Clínica Veterinária em Belo Horizonte — Banho, Tosa e Cuidados Especiais",
+    "description": "Franciskão é o pet shop e clínica veterinária que cuida do seu cão e gato com carinho de verdade. Banho, tosa, produtos e muito amor. Descubra por que tantos tutores confiam na gente.",
+    "brandTagline": "Amor que mia, carinho que late. 💚.",
     "og": {
       "image": "./assets/icons/favicon.svg"
     },
@@ -41,10 +41,10 @@
     }
   },
   "hero": {
-    "eyebrow": "🐾 Pet Shop em Belo Horizonte",
-    "headline": "O carinho que o seu melhor amigo",
-    "hl": "merece de verdade",
-    "lead": "Você já imaginou um lugar onde cães e gatos saem mais felizes do que chegaram? Na PetLovers isso acontece todos os dias — e os tutores não conseguem parar de comentar. Quer descobrir o porquê?",
+    "eyebrow": "🐾 Pet Shop/Clínca Vererinária em Belo Horizonte",
+    "headline": "Amor que mia, carinho que late. 💚",
+    "hl": "com amor e zelo",
+    "lead": "Você já imaginou um lugar onde cães e gatos saem mais felizes do que chegaram? Na Franciskão isso acontece todos os dias — e os tutores não conseguem parar de comentar. Quer descobrir o porquê?",
     "primaryCta": {
       "text": "Agende um banho & tosa",
       "href": "#contato"
@@ -60,26 +60,26 @@
     ],
     "stats": {
       "rating": 4.9,
-      "customers": 12000,
-      "years": 8
+      "customers": 60,
+      "years": 2
     },
     "images": [
       {
         "src": "./assets/slides/hero_pet_feliz_1.jpeg",
-        "alt": "Pet feliz na PetLovers 1"
+        "alt": "Pet feliz na Franciskão 1"
       },
       {
         "src": "./assets/slides/hero_pet_feliz_2.jpeg",
-        "alt": "Pet feliz na PetLovers 2"
+        "alt": "Pet feliz na Franciskão 2"
       },
       {
         "src": "./assets/slides/hero_pet_feliz_3.jpeg",
-        "alt": "Pet feliz na PetLovers 3"
+        "alt": "Pet feliz na Franciskão 3"
       }
     ]
   },
   "vitrine": {
-    "title": "Vitrine PetLovers",
+    "title": "Vitrine Franciskão",
     "h2": "Os favoritos do seu amigo",
     "p": "Produtos aprovados por quem mais entende de pet.",
     "aff": "Ao comprar, você apoia nossa loja."
@@ -128,25 +128,25 @@
     "p": "Do banho relaxante à nutrição perfeita, cada detalhe é pensado para o bem-estar do seu melhor amigo.",
     "list": [
       {
-        "src": "./assets/servicos/servico_1_banho_e_tosa.png",
+        "src": "./assets/servicos/servico_1_banho_e_tosa.jpg",
         "alt": "Serviço de banho e tosa",
         "h3": "Banho & Tosa",
         "p": "Especialistas e produtos premium. Seu pet sai renovado, fofinho e muito cheiroso."
       },
       {
-        "src": "./assets/servicos/servico_2_spa.png",
+        "src": "./assets/servicos/servico_2_spa.jpg",
         "alt": "Espaço para tratamento completo do seu pet",
         "h3": "Espaço para Pets",
         "p": "Ambiente 'Pet Friendly' exclusivo, calmo e seguro para relaxar o seu melhor amigo."
       },
       {
-        "src": "./assets/servicos/servico_3_mercado_para_pets.png",
+        "src": "./assets/servicos/servico_3_mercado_para_pets.jpg",
         "alt": "Mercado para pets",
         "h3": "Mercado para Pet",
         "p": "Rações premium, brinquedos e acessórios selecionados com amor e rigor técnico."
       },
       {
-        "src": "./assets/servicos/servico_4_brinquedos_para_pet.png",
+        "src": "./assets/servicos/servico_4_brinquedos_para_pet.jpg",
         "alt": "Brinquedos para  Pet",
         "h3": "Brinquedos para  Pet",
         "p": "Diversão e conforto para o seu melhor amigo."
@@ -156,7 +156,7 @@
   "depoimentos": {
     "title": "Depoimentos de clientes",
     "h2": "A alegria deles é nossa missão",
-    "p": "Alguns dos nossos clientes mais fofos curtindo o dia na PetLovers.",
+    "p": "Alguns dos nossos clientes mais fofos curtindo o dia na Franciskão.",
     "list": [
       {
         "src": "./assets/depoimentos/depoimento_1_banho_cachorro.jpg",
@@ -166,7 +166,7 @@
       {
         "src": "./assets/depoimentos/depoimento_2_gato_comendo_racao.jpeg",
         "caption": "Hora do lanche 🍔",
-        "description": "Depoiomento: Meu gato ama a ração que comprei na PetLovers. Ele come com muito entusiasmo!"
+        "description": "Depoiomento: Meu gato ama a ração que comprei na Franciskão. Ele come com muito entusiasmo!"
       },
       {
         "src": "./assets/depoimentos/depoimento_3_cachorro_com_cone.jpeg",
@@ -176,80 +176,80 @@
       {
         "src": "./assets/depoimentos/depoimento_4_bato_brincando.jpg",
         "caption": "Brincadeira tem hora 🤗",
-        "description": "Depoimento: Meu gato adora brincar com os brinquedos da PetLovers. É o melhor lugar para ele!"
+        "description": "Depoimento: Meu gato adora brincar com os brinquedos da Franciskão. É o melhor lugar para ele!"
       }
     ]
   },
   "avaliacoes": {
     "eyebrow": "Quem AMA, aprova",
     "h2": "Amor em forma de depoimentos",
-    "p": "Veja o que os tutores dizem sobre a experiência PetLovers.",
+    "p": "Veja o que os tutores dizem sobre a experiência Franciskão.",
     "nota": 4.9,
     "score": "4,9",
-    "total": "12000",
+    "total": "80",
     "text": "pets felizes",
-    "years": 8,
+    "years": 2,
     "reviews": [
       {
         "stars": 5,
-        "text": "Meu cachorro AMA ir na PetLovers! Sai lindo e cheiroso todas as vezes. Atendimento nota mil.",
-        "name": "Ana C.",
-        "meta": "Tutora do Thor 🐕",
+        "text": "Excelente experiência de internação que nos auxiliou muito na recuperação de amputação da perna da minha gatinha, realizada em outra clínica.",
+        "name": "Bianca V.",
+        "meta": "Tutora da Mia 🐈",
         "img": "assets/avatars/avatar1.png",
-        "user": "https://randomuser.me/api/portraits/men/75.jpg"
+        "user": "./assets/users/bianca_vargas.png"
       },
       {
         "stars": 5,
-        "text": "Nunca vi meu gato tão calmo depois do banho. Equipe atenciosa e apaixonada por bichinhos!",
-        "name": "Rafael M.",
-        "meta": "Tutor da Mia 🐈",
+        "text": "Amei os profissionais, realizam trabalho de excelência! As veterinárias são atenciosas e cuidadosas, e o rapaz do pet shop muito caprichoso!",
+        "name": "Carolaine Q.",
+        "meta": "Tutora do Thor 🐈",
         "img": "assets/avatars/avatar2.png",
-        "user": "https://randomuser.me/api/portraits/women/68.jpg"
+        "user": "./assets/users/carolaine_queiroz.png"
       },
       {
         "stars": 5,
-        "text": "O leva e traz salvou minha rotina. Confio de olhos fechados na PetLovers.",
-        "name": "Juliana P.",
+        "text": "Clínica ótima, preço justo, atendimento rápido e os profissionais são super atenciosos ❤️ recomendo demais!",
+        "name": "Daniela L.",
         "meta": "Tutora do Bono 🐶",
         "img": "assets/avatars/avatar3.png",
-        "user": "https://randomuser.me/api/portraits/women/68.jpg"
+        "user": "./assets/users/daniela_lelis.png"
       },
       {
         "stars": 5,
-        "text": "Produtos ótimos e preço justo. Recomendo demais para todo mundo do bairro!",
-        "name": "Marcos L.",
-        "meta": "Tutor da Lola 🐩",
+        "text": "Cuidaram super bem do meu cachorro e tiraram todas as dúvidas",
+        "name": "Fabrício S.",
+        "meta": "Tutor do Titi 🐕",
         "img": "assets/avatars/avatar1.png",
-        "user": "https://randomuser.me/api/portraits/women/68.jpg"
-      },
-      {
-        "stars": 4,
-        "text": "Ambiente limpo e cheiroso, meus dois gatos foram super bem cuidados.",
-        "name": "Beatriz S.",
-        "meta": "Tutora de 2 gatos 🐱",
-        "img": "assets/avatars/avatar2.png",
-        "user": "https://randomuser.me/api/portraits/women/68.jpg"
+        "user": "./assets/users/fabricio_santos.png"
       },
       {
         "stars": 5,
-        "text": "Meu filhote ficou fofo demais depois da tosa. Voltarei sempre!",
-        "name": "Diego R.",
-        "meta": "Tutor do Pipoca 🐾",
+        "text": "Tive todo o suporte necessário! Tiraram minhas dúvidas e trataram o Zeus com muito carinho. Super indico🙌❤️ …",
+        "name": "Mariana S.",
+        "meta": "Tutora do Zeus 🐕",
+        "img": "assets/avatars/avatar2.png",
+        "user": "./assets/users/mariana_silva.png"
+      },
+      {
+        "stars": 5,
+        "text": "Excelente clínica!!! Meus pets adoraram 🥰 …",
+        "name": "Paula F.",
+        "meta": "Tutora do Pipoca 🐾",
         "img": "assets/avatars/avatar3.png",
-        "user": "https://randomuser.me/api/portraits/men/75.jpg"
+        "user": "./assets/users/paula_ferreira.png"
       }
     ]
   },
   "location": {
     "endereco": {
-      "logradouro": "Av. Afonso Pena",
-      "numero": "1500",
-      "bairro": "Centro",
+      "logradouro": "Rua Augusto dos Anjos",
+      "numero": "277",
+      "bairro": "Santa Mônica",
       "cidade": "Belo Horizonte",
       "estado": "MG",
-      "cep": "30130-921",
-      "latitude": "-19.9208",
-      "longitude": "-43.9327"
+      "cep": "31520-500",
+      "latitude": "19.8194112",
+      "longitude": "-43.9818871"
     }
   },
   "googleMaps": {

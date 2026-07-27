@@ -6,11 +6,11 @@
    ============================================================ */
 
 :root {
-  --cor-principal: #ff8a3d;
-  --cor-secundaria: #2bb3a3;
-  --cor-principal-dark: #f26a1b;
-  --cor-secundaria-dark: #269e90;
-  --cor-secundaria-soft: rgba(43, 179, 163, 0.1);
+  --cor-principal: #0594a6;
+  --cor-secundaria: #31807c;
+  --cor-principal-dark: #045764;
+  --cor-secundaria-dark: #0ecdb7;
+  --cor-secundaria-soft: #cfe7f7;
   --white: #fff;
   --orange: #ff8a3d;
   --orange-deep: #f26a1b;

@@ -5,32 +5,32 @@
   <!-- Página Principal / Landing Page -->
   <url>
     <loc>https://romulinux.github.io/landing-page-template/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     
     <!-- Imagens principais otimizadas para o Google Imagens -->
     
       <image:image>
-        <image:loc>https://romulinux.github.io/landing-page-template/assets/servicos/servico_1_banho_e_tosa.png</image:loc>
+        <image:loc>https://romulinux.github.io/landing-page-template/assets/servicos/servico_1_banho_e_tosa.jpg</image:loc>
         <image:title>Banho &amp; Tosa</image:title>
         <image:caption>Serviço de banho e tosa</image:caption>
       </image:image>
     
       <image:image>
-        <image:loc>https://romulinux.github.io/landing-page-template/assets/servicos/servico_2_spa.png</image:loc>
+        <image:loc>https://romulinux.github.io/landing-page-template/assets/servicos/servico_2_spa.jpg</image:loc>
         <image:title>Espaço para Pets</image:title>
         <image:caption>Espaço para tratamento completo do seu pet</image:caption>
       </image:image>
     
       <image:image>
-        <image:loc>https://romulinux.github.io/landing-page-template/assets/servicos/servico_3_mercado_para_pets.png</image:loc>
+        <image:loc>https://romulinux.github.io/landing-page-template/assets/servicos/servico_3_mercado_para_pets.jpg</image:loc>
         <image:title>Mercado para Pet</image:title>
         <image:caption>Mercado para pets</image:caption>
       </image:image>
     
       <image:image>
-        <image:loc>https://romulinux.github.io/landing-page-template/assets/servicos/servico_4_brinquedos_para_pet.png</image:loc>
+        <image:loc>https://romulinux.github.io/landing-page-template/assets/servicos/servico_4_brinquedos_para_pet.jpg</image:loc>
         <image:title>Brinquedos para  Pet</image:title>
         <image:caption>Brinquedos para  Pet</image:caption>
       </image:image>
