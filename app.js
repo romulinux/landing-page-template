@@ -192,6 +192,55 @@
     });
   }
 
+  function faltam15MinParaFechar(horaFim) {
+    const [fh, fm] = horaFim.split(':').map(Number); // "20:00" -> 20, 0
+
+    const agora = new Date();
+    const fechamento = new Date();
+    fechamento.setHours(fh, fm, 0, 0); // 20:00:00 de hoje
+
+    const diffMs = fechamento - agora;
+    const diffMin = diffMs / 1000 / 60;
+
+    // true se está entre 0 e 15 minutos antes de fechar
+    return diffMin > 0 && diffMin <= 15;
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const now = new Date();
+    const diaAtual = now.getDay();
+    const minutosAgora = now.getHours() * 60 + now.getMinutes();
+    const hn = now.getHours();
+
+    document.querySelectorAll('#locationHours .hour-item').forEach(function (item) {
+      const dias = item.dataset.dias.split(',').map(Number);
+      const [ih, im] = item.dataset.inicio.split(':').map(Number);
+      const [fh, fm] = item.dataset.fim.split(':').map(Number);
+      const minInicio = ih * 60 + im;
+      const minFim = fh * 60 + fm;
+
+      if (dias.includes(diaAtual) && minutosAgora >= minInicio && minutosAgora <= minFim) {
+        const status = item.querySelector('.horario-funcionamento-status');
+        if ((faltam15MinParaFechar(fh + ':' + fm))) { // fecha em 15 minutos
+          status.classList.add('status-fecha-em-breve');
+          status.textContent = 'Fecha em breve';
+        } else {
+          status.classList.add('status-aberto');
+          status.textContent = 'Aberto';
+        }
+
+
+        const fechamento = new Date();
+        fechamento.setHours(fh, fm, 0, 0); // 20:00:00 de hoje
+        const closeTime = fechamento.getTime() - Date.now();
+        setTimeout(() => {
+          status.classList.remove('status-fecha-em-breve');
+          status.classList.remove('status-aberto');
+        }, closeTime);
+      }
+    });
+  });
+
   document.addEventListener("DOMContentLoaded", function () {
     var y = document.getElementById("year");
     if (y) y.textContent = new Date().getFullYear();

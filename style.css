@@ -656,6 +656,26 @@ span.star-color { color: #f5a623; }
   transition-delay: 0.4s;
 }
 
+.horario-funcionamento-status {
+  display: none;
+  transition: display 0.4s ease-in-out;
+  color: #666;
+}
+
+.horario-funcionamento-status.status-fecha-em-breve {
+  display: inline-block;
+  color: var(--orange);
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.horario-funcionamento-status.status-aberto {
+  display: inline-block;
+  color: var(--color-accent);
+  font-weight: bold;
+  margin-left: 5px;
+}
+
 
 @media (max-width: 768px) {
   .contact-inner {

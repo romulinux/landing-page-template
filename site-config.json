@@ -19,13 +19,15 @@
         "periodo": "Seg a Sex",
         "horario": "8h às 20h",
         "inicio": "08:00",
-        "fim": "20:00"
+        "fim": "20:00",
+        "days": "1,2,3,4,5"
       },
       {
         "periodo": "Sábado",
         "horario": "8h às 20h",
         "inicio": "08:00",
-        "fim": "20:00"
+        "fim": "20:00",
+        "days": "6"
       }
     ]
   },

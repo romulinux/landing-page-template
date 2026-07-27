@@ -307,7 +307,10 @@
                   <strong>Horário</strong>
                   <p id="locationHours">
                     {% for hour in config.empresa.funcionamento %}
-                      {{hour.periodo}}: {{hour.horario}}
+                      <span class="hour-item" data-dias="{{ hour.days }}" data-inicio="{{ hour.inicio }}" data-fim="{{ hour.fim }}">
+                        {{ hour.periodo }}: {{ hour.horario }}
+                        <i class="horario-funcionamento-status"></i>
+                      </span>
 
                       {% if loop.last %} {% else %}<br>{% endif %}
                     {% endfor %}
