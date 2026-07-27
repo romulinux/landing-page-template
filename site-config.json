@@ -53,6 +53,11 @@
       "text": "Ver o que dizem sobre nós",
       "href": "#avaliacoes"
     },
+    "badges": [
+      { "text": "🦴 Banho + Tosa" },
+      { "text": "😻 Medicação própria" },
+      { "text": "🐕 Limpeza de ferida" }
+    ],
     "stats": {
       "rating": 4.9,
       "customers": 12000,

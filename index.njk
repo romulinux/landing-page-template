@@ -169,9 +169,9 @@
           <div class="hero-image-wrap" id="heroImageWrap">
             <!-- As imagens reais (Unsplash) são inseridas dinamicamente pelo app.js -->
             <div id="heroBadgeWrap">
-              <div class="floating-badge badge-1">🦴 Banho + Tosa</div>
-              <div class="floating-badge badge-2">😻 100% amor</div>
-              <div class="floating-badge badge-3">🐕 Profissionais Certificados</div>
+              {% for badge in config.hero.badges %}
+                <div class="floating-badge badge-{{loop.index}}">{{badge.text}}</div>
+              {% endfor %}
             </div>
             {% for image in config.hero.images %}
               <img
