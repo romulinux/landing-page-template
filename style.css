@@ -121,7 +121,7 @@ a { color: inherit; word-break: break-word; text-decoration: none; transition: v
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; }
 .brand { display: flex; align-items: center; gap: .7rem; }
 .brand-logo { width: 48px; height: 48px; object-fit: contain; }
-.brand-name { font-family: var(--font-head); font-weight: 700; font-size: 1.5rem; color: var(--ink); }
+.brand-name { font-family: var(--font-head); font-weight: 700; font-size: 1.5rem; line-height: 1.2; color: var(--ink); }
 .brand-name span { color: var(--cor-principal-dark); }
 
 .nav { display: flex; align-items: center; gap: 1.8rem; }
