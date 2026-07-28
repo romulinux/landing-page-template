@@ -56,7 +56,7 @@ body {
 
 h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; font-weight: 600; color: var(--ink); }
 
-a { color: inherit; text-decoration: none; transition: var(--transition); }
+a { color: inherit; word-break: break-word; text-decoration: none; transition: var(--transition); }
 
 .hl { color: var(--cor-principal-dark); position: relative; display: inline-block; padding-bottom: 1.0rem; }
 .hl::after {
@@ -305,9 +305,9 @@ span.star-color { color: #f5a623; }
 .contact-inner::before {
   content: "🐾🐾"; position: absolute; font-size: 15rem; opacity: 0.05; color: #000; bottom: -5rem; left: -2rem; font-weight: 900;
 }
-.contact-copy { position: relative; z-index: 2; }
+.contact-copy { position: relative; z-index: 2; max-width: 100%; }
 .contact-copy h2 { font-size: clamp(2.2rem, 5vw, 2.8rem); color: #fff; margin-bottom: 1rem; }
-.contact-copy p { font-size: 1.15rem; opacity: 0.95; margin-bottom: 2rem; max-width: 35ch;}
+.contact-copy p { font-size: 1.15rem; opacity: 0.95; margin-bottom: 2rem; max-width: 100%; }
 .contact-list { list-style: none; display: flex; flex-direction: column; gap: 1.2rem; }
 .contact-list li { display: flex; align-items: center; gap: 1rem; font-weight: 700; font-size: 1.1rem; }
 .contact-list a:hover { color: var(--ink); transform: translateX(3px); }
@@ -451,7 +451,7 @@ span.star-color { color: #f5a623; }
   .cards, .product-grid, .footer-inner { grid-template-columns: 1fr; }
   .g-item { width: 100%; }
   .contact-inner { padding: 2rem 1.5rem; }
-  .contact-form { padding: 1.5rem; }
+  .contact-form { padding: 1.5rem; max-width: fit-content; }
   .badge-1 { left: 2%; top: 5%;} .badge-2 { right: 2%; bottom: 5%;}
   .hero-image-wrap { height: 280px; }
   .hero-stats { gap: 1.6rem; }
@@ -679,7 +679,7 @@ span.star-color { color: #f5a623; }
 
 @media (max-width: 768px) {
   .contact-inner {
-    overflow: visible;
+    /* overflow: visible; */
   }
   .success-card-content {
     padding: 1.5rem 1.0rem;
